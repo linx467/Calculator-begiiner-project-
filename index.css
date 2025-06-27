@@ -1,0 +1,54 @@
+@import 'tailwindcss'; 
+
+button{
+    cursor: pointer;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.805);
+}
+
+.calculator-container{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+input{
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: end;
+    padding: 0.5rem;
+    color: black;
+    background-color: yellowgreen;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.535);
+}
+
+.numbers{
+    border: solid 1px red;
+}
+
+.symbols{
+    border:  solid 1px blueviolet;
+}
